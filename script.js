@@ -110,6 +110,7 @@ console.log("=================== Part 3 Feeling Loopy ====================");
 
 /****************************************************************************/
 //-------------------------- Part 3: Feeling Loopy -------------------------//
+//------------------------- Comma Seperated Format -------------------------//
 let id = ["id", 42, 57, 63, 98];
 let names = ["Name", "Bruce", "Bob", "Blaine", "Bill"];
 let occupation = [
@@ -124,8 +125,53 @@ let age = ["Age", 41, 19, 58, 26];
 const data = [id, names, occupation, age];
 
 for (const cell of data) {
-  console.log(`${cell[0]}, ${cell[1]}, ${cell[2]}, ${cell[3]}, ${cell[4]}`);
+  console.log(`${cell[0]}: ${cell[1]}, ${cell[2]}, ${cell[3]}, ${cell[4]}`);
 }
 /****************************************************************************/
 console.log("=============================================================");
 /****************************************************************************/
+//------------------------ Column Seperated Format -------------------------//
+let column1 = ["id", "Name", "Occupation", "Age"];
+let column2 = [42, "Bruce", "Knight", 41];
+let column3 = [57, "Bob", "Fry Cook", 19];
+let column4 = [63, "Blaine", "Quiz Master", 58];
+let column5 = [98, "Bill", "Doctor’s Assistant", 26];
+
+const data2 = [column1, column2, column3, column4, column5];
+
+for (const cell2 of data2) {
+  console.log(`| ${cell2[0]} | | ${cell2[1]} | | ${cell2[2]} | ${cell2[3]} |`);
+}
+/****************************************************************************/
+console.log("=============================================================");
+/****************************************************************************/
+//------------------------ Column Seperated Format -------------------------//
+let columnB1 = ["Index", "Mass(kg)", "Spring1(m)", "Spring2(m)"];
+let columnB2 = ["     ", 0.0, 0.05, 0.05];
+let columnB3 = ["     ", 0.49, 066, 0.066];
+let columnB4 = ["     ", 0.98, 0.087, 0.08];
+let columnB5 = ["     ", 1.47, 0.116, 0.108];
+let columnB6 = ["     ", 1.96, 0.142, 0.138];
+let columnB7 = ["     ", 2.45, 0.166, 0.158];
+let columnB8 = ["     ", 2.94, 0.193, 0.174];
+let columnB9 = ["     ", 3.43, 0.204, 0.192];
+let columnB10 = ["     ", 3.92, 0.226, 0.205];
+let columnB11 = ["     ", 4.41, 0.238, 0.232];
+
+const data3 = [
+  columnB1,
+  columnB2,
+  columnB3,
+  columnB4,
+  columnB5,
+  columnB6,
+  columnB7,
+  columnB8,
+  columnB9,
+  columnB10,
+  columnB11,
+];
+
+for (const cell3 of data3) {
+  console.log(` ${cell3[0]}| ${cell3[1]} | ${cell3[2]} | ${cell3[3]}`);
+}
